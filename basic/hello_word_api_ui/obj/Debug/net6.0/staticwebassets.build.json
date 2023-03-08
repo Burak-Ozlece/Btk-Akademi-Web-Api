@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "W3sdW/zEpx2ByIA2b84URbyRiuYsm2Yv6twQ7ai4PeM=",
+  "Source": "hello_word_api_ui",
+  "BasePath": "_content/hello_word_api_ui",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
