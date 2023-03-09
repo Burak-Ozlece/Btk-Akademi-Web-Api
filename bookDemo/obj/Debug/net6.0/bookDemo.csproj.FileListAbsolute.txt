@@ -30,3 +30,8 @@ C:\Users\Burak\Desktop\Btk Akademi\bookDemo\obj\Debug\net6.0\refint\bookDemo.dll
 C:\Users\Burak\Desktop\Btk Akademi\bookDemo\obj\Debug\net6.0\bookDemo.pdb
 C:\Users\Burak\Desktop\Btk Akademi\bookDemo\obj\Debug\net6.0\bookDemo.genruntimeconfig.cache
 C:\Users\Burak\Desktop\Btk Akademi\bookDemo\obj\Debug\net6.0\ref\bookDemo.dll
+C:\Users\Burak\Desktop\Btk Akademi\bookDemo\bin\Debug\net6.0\libman.json
+C:\Users\Burak\Desktop\Btk Akademi\bookDemo\bin\Debug\net6.0\Microsoft.AspNetCore.JsonPatch.dll
+C:\Users\Burak\Desktop\Btk Akademi\bookDemo\bin\Debug\net6.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+C:\Users\Burak\Desktop\Btk Akademi\bookDemo\bin\Debug\net6.0\Newtonsoft.Json.dll
+C:\Users\Burak\Desktop\Btk Akademi\bookDemo\bin\Debug\net6.0\Newtonsoft.Json.Bson.dll
