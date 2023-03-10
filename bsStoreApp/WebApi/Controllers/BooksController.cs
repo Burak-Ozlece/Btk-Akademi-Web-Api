@@ -1,8 +1,8 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using Entities.Models;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.JsonPatch;
 using Microsoft.AspNetCore.Mvc;
-using WebApi.Models;
-using WebApi.Repository;
+using Repositories.EfCore;
 
 namespace WebApi.Controllers
 {
@@ -51,7 +51,7 @@ namespace WebApi.Controllers
             
         }
         [HttpPost]
-        public IActionResult CreateOneBook([FromBody]Books books)
+        public IActionResult CreateOneBook([FromBody]Book books)
         {
             try
             {
@@ -68,7 +68,7 @@ namespace WebApi.Controllers
             }
         }
         [HttpPut("{id:int}")]
-        public IActionResult UpdateOneBook([FromRoute(Name = "id")] int id, [FromBody] Books books)
+        public IActionResult UpdateOneBook([FromRoute(Name = "id")] int id, [FromBody] Book books)
         {
             try
             {
@@ -113,7 +113,7 @@ namespace WebApi.Controllers
     }
 
         [HttpPatch("{id:int}")]
-        public IActionResult PartialUpdateOneBook([FromRoute(Name = "id")] int id, [FromBody] JsonPatchDocument<Books> bookPath)
+        public IActionResult PartialUpdateOneBook([FromRoute(Name = "id")] int id, [FromBody] JsonPatchDocument<Book> bookPath)
         {
             try
             {

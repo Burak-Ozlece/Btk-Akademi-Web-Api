@@ -936,6 +936,30 @@
             "rid": "win"
           }
         }
+      },
+      "Entities/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/Entities.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Entities.dll": {}
+        }
+      },
+      "Repositories/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Entities": "1.0.0",
+          "Microsoft.EntityFrameworkCore": "6.0.14"
+        },
+        "compile": {
+          "bin/placeholder/Repositories.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Repositories.dll": {}
+        }
       }
     }
   },
@@ -2365,33 +2389,44 @@
         "useSharedDesignerContext.txt",
         "version.txt"
       ]
+    },
+    "Entities/1.0.0": {
+      "type": "project",
+      "path": "../Entities/Entities.csproj",
+      "msbuildProject": "../Entities/Entities.csproj"
+    },
+    "Repositories/1.0.0": {
+      "type": "project",
+      "path": "../Repositories/Repositories.csproj",
+      "msbuildProject": "../Repositories/Repositories.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
+      "Entities >= 1.0.0",
       "Microsoft.AspNetCore.JsonPatch >= 6.0.14",
       "Microsoft.AspNetCore.Mvc.NewtonsoftJson >= 6.0.14",
-      "Microsoft.EntityFrameworkCore >= 6.0.14",
       "Microsoft.EntityFrameworkCore.Design >= 6.0.14",
       "Microsoft.EntityFrameworkCore.SqlServer >= 6.0.14",
       "Microsoft.EntityFrameworkCore.Tools >= 6.0.14",
+      "Repositories >= 1.0.0",
       "Swashbuckle.AspNetCore >= 6.2.3"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\burak\\.nuget\\packages\\": {}
+    "C:\\Users\\Burak\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\burak\\Desktop\\Btk-Akademi-Web-Api\\bsStoreApp\\WebApi\\WebApi.csproj",
+      "projectUniqueName": "C:\\Users\\Burak\\Desktop\\Btk Akademi\\bsStoreApp\\WebApi\\WebApi.csproj",
       "projectName": "WebApi",
-      "projectPath": "C:\\Users\\burak\\Desktop\\Btk-Akademi-Web-Api\\bsStoreApp\\WebApi\\WebApi.csproj",
-      "packagesPath": "C:\\Users\\burak\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\burak\\Desktop\\Btk-Akademi-Web-Api\\bsStoreApp\\WebApi\\obj\\",
+      "projectPath": "C:\\Users\\Burak\\Desktop\\Btk Akademi\\bsStoreApp\\WebApi\\WebApi.csproj",
+      "packagesPath": "C:\\Users\\Burak\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Burak\\Desktop\\Btk Akademi\\bsStoreApp\\WebApi\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\burak\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Burak\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -2404,7 +2439,14 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\Burak\\Desktop\\Btk Akademi\\bsStoreApp\\Entities\\Entities.csproj": {
+              "projectPath": "C:\\Users\\Burak\\Desktop\\Btk Akademi\\bsStoreApp\\Entities\\Entities.csproj"
+            },
+            "C:\\Users\\Burak\\Desktop\\Btk Akademi\\bsStoreApp\\Repositories\\Repositories.csproj": {
+              "projectPath": "C:\\Users\\Burak\\Desktop\\Btk Akademi\\bsStoreApp\\Repositories\\Repositories.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
@@ -2422,10 +2464,6 @@
             "version": "[6.0.14, )"
           },
           "Microsoft.AspNetCore.Mvc.NewtonsoftJson": {
-            "target": "Package",
-            "version": "[6.0.14, )"
-          },
-          "Microsoft.EntityFrameworkCore": {
             "target": "Package",
             "version": "[6.0.14, )"
           },
