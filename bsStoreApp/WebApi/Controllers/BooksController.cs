@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.JsonPatch;
 using Microsoft.AspNetCore.Mvc;
+using Repositories.Contracts;
 using Repositories.EfCore;
 
 namespace WebApi.Controllers
@@ -10,11 +11,11 @@ namespace WebApi.Controllers
     [ApiController]
     public class BooksController : ControllerBase
     {
-        private readonly RepositoryContext _context;
+        private readonly IRepositoryManager _manager;
 
-        public BooksController(RepositoryContext context)
+        public BooksController(IRepositoryManager manager)
         {
-            _context = context;
+            _manager = manager;
         }
 
         [HttpGet]
@@ -22,7 +23,7 @@ namespace WebApi.Controllers
         {
             try
             {
-                var books = _context.Books;
+                var books = _manager.Book.GetAllBooks();
                 return Ok(books);
             }
             catch (Exception ex)
@@ -92,7 +93,7 @@ namespace WebApi.Controllers
 
         }
 
-    [HttpDelete("{id:int}")]
+        [HttpDelete("{id:int}")]
         public IActionResult DeleteOneBook([FromRoute(Name = "id")] int id)
         {
             try
