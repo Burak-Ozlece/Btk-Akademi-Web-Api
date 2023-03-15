@@ -1,9 +1,5 @@
-<<<<<<< HEAD
 ﻿using Entities.Models;
 using Microsoft.AspNetCore.Http;
-=======
-﻿using Microsoft.AspNetCore.Http;
->>>>>>> 2dde400210ae6ccef9419ace948392c737ce9787
 using Microsoft.AspNetCore.JsonPatch;
 using Microsoft.AspNetCore.Mvc;
 using Repositories.Contacts;
@@ -114,29 +110,18 @@ namespace WebApi.Controllers
                 throw new Exception(ex.Message);
             }
         }
-<<<<<<< HEAD
 
         [HttpPatch("{id:int}")]
         public IActionResult PartialUpdateOneBook([FromRoute(Name = "id")] int id, [FromBody] JsonPatchDocument<Book> bookPath)
         {
             var entity = _manager.Book.GetOneBookById(id, true);
-=======
-        [HttpPatch("{id:int}")]
-        public IActionResult PartialUpdateOneBook([FromRoute(Name = "id")] int id, [FromBody] JsonPatchDocument<Book> bookPath)
-        {
-            var entity = _context.Books.Where(x => x.Id.Equals(id)).SingleOrDefault();
->>>>>>> 2dde400210ae6ccef9419ace948392c737ce9787
             if (entity is null)
             {
                 return NotFound();
             }
             bookPath.ApplyTo(entity);
-<<<<<<< HEAD
             _manager.Book.UpdateOneBook(entity);
             _manager.Save();
-=======
-            _context.SaveChanges();
->>>>>>> 2dde400210ae6ccef9419ace948392c737ce9787
             return NoContent();
         }
     }
