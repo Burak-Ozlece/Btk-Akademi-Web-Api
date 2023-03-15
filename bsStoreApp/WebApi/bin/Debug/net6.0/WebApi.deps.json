@@ -8,9 +8,15 @@
     ".NETCoreApp,Version=v6.0": {
       "WebApi/1.0.0": {
         "dependencies": {
+<<<<<<< HEAD
           "Entities": "1.0.0",
           "Microsoft.AspNetCore.JsonPatch": "6.0.15",
           "Microsoft.AspNetCore.Mvc.NewtonsoftJson": "6.0.15",
+=======
+          "Microsoft.AspNetCore.JsonPatch": "6.0.15",
+          "Microsoft.AspNetCore.Mvc.NewtonsoftJson": "6.0.15",
+          "Microsoft.EntityFrameworkCore": "6.0.14",
+>>>>>>> 2dde400210ae6ccef9419ace948392c737ce9787
           "Microsoft.EntityFrameworkCore.Sqlite": "6.0.14",
           "Microsoft.EntityFrameworkCore.Tools": "6.0.14",
           "Repositories": "1.0.0",

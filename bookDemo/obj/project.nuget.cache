@@ -1,6 +1,10 @@
 {
   "version": 2,
+<<<<<<< HEAD
   "dgSpecHash": "l7daCpj3yWTa5yY4GTOKbBFBr4JtEaaAnwq6/FV0mWBoK7/3saPsc3k3+OhsxDklvnqpeiIHFb7/CLJD2bknEQ==",
+=======
+  "dgSpecHash": "YUO1uTzYD33I1xOzU/Iri/V0bwUaH04Xnud0Cqo+0Wb84hg+ldiUoRj4tHqF5ufXRN7ZOK0jdbRqc0kl3ATc6A==",
+>>>>>>> 2dde400210ae6ccef9419ace948392c737ce9787
   "success": true,
   "projectFilePath": "C:\\Users\\Burak\\Desktop\\Btk Akademi\\bookDemo\\bookDemo.csproj",
   "expectedPackageFiles": [
