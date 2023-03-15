@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\burak\\Desktop\\Btk-Akademi-Web-Api\\bookDemo\\bookDemo.csproj": {}
+    "C:\\Users\\Burak\\Desktop\\Btk Akademi\\bookDemo\\bookDemo.csproj": {}
   },
   "projects": {
-    "C:\\Users\\burak\\Desktop\\Btk-Akademi-Web-Api\\bookDemo\\bookDemo.csproj": {
+    "C:\\Users\\Burak\\Desktop\\Btk Akademi\\bookDemo\\bookDemo.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\burak\\Desktop\\Btk-Akademi-Web-Api\\bookDemo\\bookDemo.csproj",
+        "projectUniqueName": "C:\\Users\\Burak\\Desktop\\Btk Akademi\\bookDemo\\bookDemo.csproj",
         "projectName": "bookDemo",
-        "projectPath": "C:\\Users\\burak\\Desktop\\Btk-Akademi-Web-Api\\bookDemo\\bookDemo.csproj",
-        "packagesPath": "C:\\Users\\burak\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\burak\\Desktop\\Btk-Akademi-Web-Api\\bookDemo\\obj\\",
+        "projectPath": "C:\\Users\\Burak\\Desktop\\Btk Akademi\\bookDemo\\bookDemo.csproj",
+        "packagesPath": "C:\\Users\\Burak\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Burak\\Desktop\\Btk Akademi\\bookDemo\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\burak\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Burak\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -72,7 +72,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
         }
       }
     }

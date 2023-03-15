@@ -1,7 +1,9 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using Entities.Models;
+using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.JsonPatch;
 using Microsoft.AspNetCore.Mvc;
-using WebApi.Models;
-using WebApi.Repositories;
+using Repositories.Contacts;
+using Repositories.EfCore;
 
 namespace WebApi.Controllers
 {
@@ -9,17 +11,17 @@ namespace WebApi.Controllers
     [ApiController]
     public class BooksController : ControllerBase
     {
-        private readonly RepositoryContext _context;
+        private readonly IRepositoryManager _manager;
 
-        public BooksController(RepositoryContext context)
+        public BooksController(IRepositoryManager manager)
         {
-            _context = context;
+            _manager = manager;
         }
 
         [HttpGet]
         public IActionResult GetlAllBooks()
         {
-            var books = _context.Books.ToList();
+            var books = _manager.Book.GetAllBooks(false);
             return Ok(books);
         }
         [HttpGet("{id:int}")]
@@ -27,7 +29,7 @@ namespace WebApi.Controllers
         {
             try
             {
-                var book = _context.Books.Where(x => x.Id.Equals(id)).SingleOrDefault();
+                var book = _manager.Book.GetOneBookById(id,false);
                 if (book is null)
                 {
                     return NotFound();
@@ -51,8 +53,8 @@ namespace WebApi.Controllers
                 {
                     return BadRequest();
                 }
-                _context.Books.Add(book);
-                _context.SaveChanges();
+                _manager.Book.UpdateOneBook(book);
+                _manager.Save();
                 return StatusCode(201, book);
             }
             catch (Exception ex)
@@ -62,12 +64,12 @@ namespace WebApi.Controllers
             }
         }
 
-        [HttpPut]
+        [HttpPut("{id:int}")]
         public IActionResult UpdateOneBook([FromBody]Book book,[FromRoute(Name ="id")]int id) 
         {
             try
             {
-                var entity = _context.Books.Where(x => x.Id.Equals(id)).SingleOrDefault();
+                var entity = _manager.Book.GetOneBookById(id,true);
                 if (entity is null)
                 {
                     return NotFound();
@@ -78,8 +80,8 @@ namespace WebApi.Controllers
                 }
                 entity.Title = book.Title;
                 entity.Price = book.Price;
-                _context.SaveChanges();
-                return Ok(entity);
+                _manager.Save();
+                return Ok();
             }
             catch (Exception ex)
             {
@@ -93,13 +95,13 @@ namespace WebApi.Controllers
         {
             try
             {
-                var entity = _context.Books.Where(x => x.Id.Equals(id)).SingleOrDefault();
+                var entity = _manager.Book.GetOneBookById(id, true);
                 if (entity is null)
                 {
                     return NotFound(new {statusCode = 404, message=$"Book with id:{id} could not found."});
                 }
-                _context.Books.Remove(entity);
-                _context.SaveChanges();
+                _manager.Book.DeleteOneBook(entity);
+                _manager.Save();
                 return NoContent();
             }
             catch (Exception ex)
@@ -107,6 +109,20 @@ namespace WebApi.Controllers
 
                 throw new Exception(ex.Message);
             }
+        }
+
+        [HttpPatch("{id:int}")]
+        public IActionResult PartialUpdateOneBook([FromRoute(Name = "id")] int id, [FromBody] JsonPatchDocument<Book> bookPath)
+        {
+            var entity = _manager.Book.GetOneBookById(id, true);
+            if (entity is null)
+            {
+                return NotFound();
+            }
+            bookPath.ApplyTo(entity);
+            _manager.Book.UpdateOneBook(entity);
+            _manager.Save();
+            return NoContent();
         }
     }
 }

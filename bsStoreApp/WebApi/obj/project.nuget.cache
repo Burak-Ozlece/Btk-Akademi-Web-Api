@@ -1,10 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "OUZ+rMsXj9PQ66Hisb/r4sd/FdZQRUbjQTWy28dtEYtmjmRArUXdwKr3ffwRxxMwweIbf5HfH+6ufRyQcBs1hw==",
+  "dgSpecHash": "quYzTRbAr4SEffs9WRFB25c0rQCCpb5YG0P51lBKtuSACj/w9GBF++lF3SO+6IPSJHIOCvfH8R6fNIlv+yDguw==",
   "success": true,
   "projectFilePath": "C:\\Users\\Burak\\Desktop\\Btk Akademi\\bsStoreApp\\WebApi\\WebApi.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Burak\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
+    "C:\\Users\\Burak\\.nuget\\packages\\microsoft.aspnetcore.jsonpatch\\6.0.15\\microsoft.aspnetcore.jsonpatch.6.0.15.nupkg.sha512",
+    "C:\\Users\\Burak\\.nuget\\packages\\microsoft.aspnetcore.mvc.newtonsoftjson\\6.0.15\\microsoft.aspnetcore.mvc.newtonsoftjson.6.0.15.nupkg.sha512",
+    "C:\\Users\\Burak\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\Burak\\.nuget\\packages\\microsoft.data.sqlite.core\\6.0.14\\microsoft.data.sqlite.core.6.0.14.nupkg.sha512",
     "C:\\Users\\Burak\\.nuget\\packages\\microsoft.entityframeworkcore\\6.0.14\\microsoft.entityframeworkcore.6.0.14.nupkg.sha512",
     "C:\\Users\\Burak\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\6.0.14\\microsoft.entityframeworkcore.abstractions.6.0.14.nupkg.sha512",
@@ -26,6 +29,8 @@
     "C:\\Users\\Burak\\.nuget\\packages\\microsoft.extensions.options\\6.0.0\\microsoft.extensions.options.6.0.0.nupkg.sha512",
     "C:\\Users\\Burak\\.nuget\\packages\\microsoft.extensions.primitives\\6.0.0\\microsoft.extensions.primitives.6.0.0.nupkg.sha512",
     "C:\\Users\\Burak\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
+    "C:\\Users\\Burak\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
+    "C:\\Users\\Burak\\.nuget\\packages\\newtonsoft.json.bson\\1.0.2\\newtonsoft.json.bson.1.0.2.nupkg.sha512",
     "C:\\Users\\Burak\\.nuget\\packages\\sqlitepclraw.bundle_e_sqlite3\\2.1.2\\sqlitepclraw.bundle_e_sqlite3.2.1.2.nupkg.sha512",
     "C:\\Users\\Burak\\.nuget\\packages\\sqlitepclraw.core\\2.1.2\\sqlitepclraw.core.2.1.2.nupkg.sha512",
     "C:\\Users\\Burak\\.nuget\\packages\\sqlitepclraw.lib.e_sqlite3\\2.1.2\\sqlitepclraw.lib.e_sqlite3.2.1.2.nupkg.sha512",
