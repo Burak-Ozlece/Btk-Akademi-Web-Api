@@ -8,19 +8,19 @@
     "net6.0": []
   },
   "packageFolders": {
-    "C:\\Users\\Burak\\.nuget\\packages\\": {}
+    "C:\\Users\\burak\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Burak\\Desktop\\Btk Akademi\\bsStoreApp\\Entities\\Entities.csproj",
+      "projectUniqueName": "C:\\Users\\burak\\Desktop\\Btk-Akademi-Web-Api\\bsStoreApp\\Entities\\Entities.csproj",
       "projectName": "Entities",
-      "projectPath": "C:\\Users\\Burak\\Desktop\\Btk Akademi\\bsStoreApp\\Entities\\Entities.csproj",
-      "packagesPath": "C:\\Users\\Burak\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Burak\\Desktop\\Btk Akademi\\bsStoreApp\\Entities\\obj\\",
+      "projectPath": "C:\\Users\\burak\\Desktop\\Btk-Akademi-Web-Api\\bsStoreApp\\Entities\\Entities.csproj",
+      "packagesPath": "C:\\Users\\burak\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\burak\\Desktop\\Btk-Akademi-Web-Api\\bsStoreApp\\Entities\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Burak\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\burak\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

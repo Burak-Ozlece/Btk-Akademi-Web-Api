@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Burak\\Desktop\\Btk Akademi\\bsStoreApp\\Repositories\\Repositories.csproj": {}
+    "C:\\Users\\burak\\Desktop\\Btk-Akademi-Web-Api\\bsStoreApp\\Repositories\\Repositories.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Burak\\Desktop\\Btk Akademi\\bsStoreApp\\Entities\\Entities.csproj": {
+    "C:\\Users\\burak\\Desktop\\Btk-Akademi-Web-Api\\bsStoreApp\\Entities\\Entities.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Burak\\Desktop\\Btk Akademi\\bsStoreApp\\Entities\\Entities.csproj",
+        "projectUniqueName": "C:\\Users\\burak\\Desktop\\Btk-Akademi-Web-Api\\bsStoreApp\\Entities\\Entities.csproj",
         "projectName": "Entities",
-        "projectPath": "C:\\Users\\Burak\\Desktop\\Btk Akademi\\bsStoreApp\\Entities\\Entities.csproj",
-        "packagesPath": "C:\\Users\\Burak\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Burak\\Desktop\\Btk Akademi\\bsStoreApp\\Entities\\obj\\",
+        "projectPath": "C:\\Users\\burak\\Desktop\\Btk-Akademi-Web-Api\\bsStoreApp\\Entities\\Entities.csproj",
+        "packagesPath": "C:\\Users\\burak\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\burak\\Desktop\\Btk-Akademi-Web-Api\\bsStoreApp\\Entities\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Burak\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\burak\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -59,17 +59,17 @@
         }
       }
     },
-    "C:\\Users\\Burak\\Desktop\\Btk Akademi\\bsStoreApp\\Repositories\\Repositories.csproj": {
+    "C:\\Users\\burak\\Desktop\\Btk-Akademi-Web-Api\\bsStoreApp\\Repositories\\Repositories.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Burak\\Desktop\\Btk Akademi\\bsStoreApp\\Repositories\\Repositories.csproj",
+        "projectUniqueName": "C:\\Users\\burak\\Desktop\\Btk-Akademi-Web-Api\\bsStoreApp\\Repositories\\Repositories.csproj",
         "projectName": "Repositories",
-        "projectPath": "C:\\Users\\Burak\\Desktop\\Btk Akademi\\bsStoreApp\\Repositories\\Repositories.csproj",
-        "packagesPath": "C:\\Users\\Burak\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Burak\\Desktop\\Btk Akademi\\bsStoreApp\\Repositories\\obj\\",
+        "projectPath": "C:\\Users\\burak\\Desktop\\Btk-Akademi-Web-Api\\bsStoreApp\\Repositories\\Repositories.csproj",
+        "packagesPath": "C:\\Users\\burak\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\burak\\Desktop\\Btk-Akademi-Web-Api\\bsStoreApp\\Repositories\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Burak\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\burak\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -83,8 +83,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\Burak\\Desktop\\Btk Akademi\\bsStoreApp\\Entities\\Entities.csproj": {
-                "projectPath": "C:\\Users\\Burak\\Desktop\\Btk Akademi\\bsStoreApp\\Entities\\Entities.csproj"
+              "C:\\Users\\burak\\Desktop\\Btk-Akademi-Web-Api\\bsStoreApp\\Entities\\Entities.csproj": {
+                "projectPath": "C:\\Users\\burak\\Desktop\\Btk-Akademi-Web-Api\\bsStoreApp\\Entities\\Entities.csproj"
               }
             }
           }
